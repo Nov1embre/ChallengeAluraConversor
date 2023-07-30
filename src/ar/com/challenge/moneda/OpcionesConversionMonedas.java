@@ -1,11 +1,24 @@
+package ar.com.challenge.moneda;
 import javax.swing.JOptionPane;
-
+/**
+ * 
+ * @author facundo
+ *esta clase genera un cuadro de dialogo que da a conocer las opciones de conversion de las monedas tratadas,
+ *recibiendo como parametro el valor que el usuario desea convertir de una moneda a pesos, o de pesos a otra moneda
+ */
 public class OpcionesConversionMonedas {
 
 	ConversorMonedas moneda = new ConversorMonedas();
-
+/**
+ * 
+ * @param valor es el valor que ingresa el usuario para convertir de una opcion a otra
+ */
 	public void OpcionesMonedas(double valor) {
-
+/**
+ * Muestra un ventana de dialogo en la que el usuario elije que opciones usar
+ * se encuentran dentro del arreglo que en vez de definirlo afuera lo defini dentro de las opciones que da la 
+ * clase JOptionPane de Java.Swing
+ */
 		String seleccion = (JOptionPane.showInputDialog(null, "Elije a la Moneda que deseas convertir tu dinero", "Monedas",
 				JOptionPane.PLAIN_MESSAGE, null,
 				new Object[] {

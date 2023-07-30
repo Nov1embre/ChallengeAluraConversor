@@ -1,10 +1,23 @@
+package ar.com.challenge.temperatura;
 import javax.swing.JOptionPane;
+/**
+ * 
+ * @author facundo
+ *
+ *Esta clase tiene las opciones de conversion de temperatura que se le permiten 
+ *al usuario
+ */
 
 public class OpcionesConversionTemperaturas {
 
 	ConversorTemperaturas temperatura = new ConversorTemperaturas();
+	/**
+	 * Este metodo despliega una ventana con opciones de conversion y recibe el valor que el usuario quiere convertir
+	 * @param valor es el valor que ingresa el usuario para convertir la temperatura
+	 */
 
 	public void OpcionesTemperatura(double valor) {
+		
 
 		String seleccion = (JOptionPane.showInputDialog(null, "Elije la temperatura que deseas convertir",
 				"Temperaturas", JOptionPane.PLAIN_MESSAGE, null,
